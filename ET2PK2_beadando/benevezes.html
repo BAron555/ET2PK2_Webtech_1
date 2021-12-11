@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/mycss.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+
+    <script defer src="js/nevezes.js"></script>
+
+<title>Benevezés</title>
+</head>
+<body>
+    <ul class="navbar-list">
+        <li class="navbar"><a class="navbar-link-elements" href="index.html">Főoldal</a></li>
+        <li class="navbar"><a class="navbar-link-elements" href="winners.html">Győztesek</a></li>
+        <li class="navbar"><a class="navbar-link-elements" href="kapcsolat.html">Kapcsolat</a></li>
+        <li class="navbar"><a class="navbar-link-elements" href="benevezes.html">Benevezés</a></li>
+      </ul>
+
+  <div>
+      <form id="form" action="atiranyitas.html" >
+        <h1 style="font-family: Trirong, sans-serif">Benevezés</h1>
+        <div class="input-control">
+            <label for="username">Vezetéknév</label>
+            <input id="username" name="username" type="text">
+            <div class="error"></div>
+        </div>
+        <div class="input-control">
+            <label for="lastname">Keresztnév</label>
+            <input id="lastname" name="lastname" type="text">
+            <div class="error"></div>
+        </div>
+        
+
+        <div class="input-control">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="text">
+            <div class="error"></div>
+        </div>
+        
+       
+       
+      <br>
+     
+      <div class="input-control">
+        <label for="zip">iranyitoszam</label>
+        <input id="zip"name="zip" type="text">
+        <div class="error"></div>
+    </div>
+
+    <div class="input-control">
+        <label for="city">Város</label>
+        <input id="city"name="city" type="text">
+        <div class="error"></div>
+    </div>
+
+    <div class="input-control">
+        <label for="street">Utca</label>
+        <input id="street"name="street" type="text">
+        <div class="error"></div>
+    </div>
+
+    <div class="input-control">
+        <label for="homeNumber">Házszám</label>
+        <input id="homeNumber"name="homeNumber" type="text">
+        <div class="error"></div>
+    </div>
+
+    
+      
+        <div class="input-control">
+            <select name="sex" id="sex">
+                <option value="-" selected="selected" >-</option>
+                <option value="Ferfi" >Férfi</option>
+                <option value="No" >Nő</option>
+            </select>
+            <div class="error"></div>
+        </div>
+</div>
+        <button type="submit">Benevezés</button>
+    </form>
+  </div>
+
+</body>
+</html>

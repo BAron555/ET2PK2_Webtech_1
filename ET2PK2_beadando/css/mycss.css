@@ -1,0 +1,139 @@
+  ul.navbar-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(22, 22, 22);
+
+  }
+  
+  li.navbar {
+    display: inline-flex;
+  }
+
+  .navbar-link-elements {
+    color: rgb(231, 231, 231);
+    padding: 22px 24px;
+    text-indent: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-decoration: none;
+
+  }
+  
+  .navbar-link-elements:hover {
+    background-color: rgb(187, 187, 176);
+  }
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #a5d1ee;
+    padding: 20px;
+    font-family: Arial;
+    
+  }
+  
+  .main {
+    max-width: 1000px;
+    margin: auto;
+    
+  }
+  
+  #addingNewElementToUl{
+      width: 30%;
+      border-style: dotted;
+  }
+
+  #tabla{
+    width: 30%;
+    border-style: dotted;
+  }
+
+  p[target=_blank] {
+    font-size: 10px;
+}
+
+  span {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+  
+  .inherit span {
+    font-family: inherit;
+  }
+
+  #imgdiv {
+    position: fixed;
+    width: 30%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+    display: none;
+  }
+
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+
+  #slide{
+    font-size: 20px;
+    position:absolute;
+  }
+
+  .row {
+    margin: 8px -16px;
+  }  
+  .row > .column {
+    padding: 8px;
+  }
+  
+  .column {
+    float: left;
+    width: 32%;
+  }
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+      
+  .content {
+    background-color: #cdebff;
+    padding: 10px;
+  }
+
+  .imgs{
+      height: 294px;
+      
+  }
+
+  .error{
+    color: red;
+    
+  }
+  form{
+    padding: 40px;
+    box-sizing: border-box;
+    background: #c7e0f3;
+    
+  }
+  input[type=text],  select {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  a:visited {
+    color: rgb(212, 0, 255);
+  }
+  a.navbar-link-elements:visited{
+    color: rgb(231, 231, 231);
+  }

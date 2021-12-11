@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Átírányítás</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*, html,body{
+	padding:0px;
+	margin:0px;
+	box-sizing:border-box;
+	font-family:'Poppins', sans-serif;
+}
+::selection{
+	background-color:#2d98da;
+	color:#fff;
+}
+body{
+	background-color:#0f1418;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	width:100%;
+	min-height:100vh;
+}
+.container{
+	position:relative;
+	text-align:center;
+}
+.container .Loading{
+	position:relative;
+	width:500px;
+	height:22px;
+	background:rgba(255,255,255,.05);
+	border-radius:25px;
+	display:flex;
+	align-items:center;
+	border:5px solid #1b1f23;
+}
+.container .Loading span{
+	position:absolute;
+	width:0%;
+	height:100%;
+	background-color:#0fbcf9;
+	border-radius:25px;
+}
+.container i{
+	color:#fff;
+	font-size:5em;
+}
+
+
+
+    </style>
+
+<script>
+    function pageRedirect() {
+        window.location.replace("index.html");
+    }      
+    setTimeout("pageRedirect()", 3000);
+</script>
+</head>
+
+<body style="background-color:#a5d1ee;">
+
+	<div class="container">	
+		<i>0%</i>	
+		<div class="Loading">
+			<span data-charge='100'></span>
+		</div>
+	</div>	
+
+
+
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+	<script type="text/javascript">		
+		$(function(){
+
+			$('.Loading span').animate({
+				width : $('.Loading span').data('charge') + '%'
+			},1000);
+
+			var getCounter = parseInt($('.container i').text());
+
+			var MyCounter = setInterval(function(){
+				if(getCounter !== 101){
+					$('.container i').text(getCounter++ + '%');
+				}else{
+					clearInterval(MyCounter);
+					$('.container i').text('A benevezés megtörtént');
+				};
+	
+			},10);
+
+		});
+	</script>
+
+</body>
+</html>
